@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.topSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topSection .lives{
+    display: flex;
+}
+
+.topSection .lives #live1{
+    background-image: url('pixelated-heart.png');
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+.topSection .lives #live2{
+    background-image: url('pixelated-heart.png');
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+.topSection .lives #live3{
+    background-image: url('pixelated-heart.png');
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+.topSection .timer{
+    color: #fff;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.topSection .score{
+    color: #fff;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.gameBoard{
+    display:grid;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(7, 100px);
+}
+
+.gameBoard .hole{
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border-radius: 90px;
+}
+
+.gameBoard #hole1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gameBoard #hole2{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gameBoard #hole3{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gameBoard #hole4{
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gameBoard #hole5{
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gameBoard #hole6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.gameBoard #hole7{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.gameBoard #hole8{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.gameBoard #hole9{
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.gameBoard #hole10{
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.gameBoard #hole11{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.gameBoard #hole12{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.gameBoard #hole13{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.gameBoard #hole14{
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.gameBoard #hole15{
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.gameBoard .hole img{
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+    animation-name: mole;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+
+@keyframes mole{
+    from{
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-20px) rotate(0deg);
+        opacity: 100;
+    }
+}
+
+.restartBoard{
+    height: 400px;
+    width: 400px;
+    background-image: url('/Title Board.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 33%;
+    bottom: 550px;
+    display: none;
+}
+
+.restartBoard p{
+    color: #fff;
+    font-family: "Pixelify Sans",sans-serif;
+    position: relative;
+    top: 204px;
+    left: 40%;
+    font-size: larger;
+}

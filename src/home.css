@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* cursor: url('Pixelated-Hammer.png'),auto; */
+}
+
+body{
+    background-color: #B27C43;
+    
+}
+
+.cursor{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('Pixelated-Hammer.png');
+    background-size: 100% 100;
+    background-position: center;
+    transform: translate(-20%, -60%);
+    transition: transform .1s;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.cursor.active{
+    transform: translate(-20%, -60%) rotate(-25deg);
+}
+
+h1{
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.mole{
+    height: 100px;
+    width: 100px;
+    background-image: url('pixelated-mole.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 90px;
+    left: 47%;
+}
+
+.startBoard{
+    height: 200px;
+    width: 150px;
+    background-image: url('start-board.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 62px;
+    left: 45%;
+}
+
+.startBoard .start{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 110px;
+    left: 40px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: "Pixelify Sans", sans-serif;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.start:hover{
+    color:#464444;
+    transform: scale(1.1);
+}
